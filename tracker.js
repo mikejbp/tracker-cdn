@@ -15,7 +15,6 @@ class Tracker {
             navigationData: { 
                 url: '',
                 visitTime: 0,
-                date: 0,
                 time: 0,
                 timeZone: this.getTimeZone()
             },
@@ -61,12 +60,10 @@ class Tracker {
     }
 
     sendData(){
-        let now = new Date();
         this.endTime = Date.now();
 
         this.dataObject.navigationData.visitTime = this.endTime - this.initTime;
-        this.dataObject.navigationData.date = now.toLocaleDateString();
-        this.dataObject.navigationData.time = now.toISOString().slice(11, 19);
+        this.dataObject.navigationData.time = new Date();
 
         navigator.sendBeacon('http://localhost:5000/api/v1/tracking', JSON.stringify(this.dataObject));
         this.initTime = Date.now();
