@@ -109,21 +109,6 @@ class Tracker {
         });
     };
 
-    addShareButtonClickedListener(){
-        const buttons = document.getElementsByTagName('button');
-        const shareButtons = Array.from(buttons).filter(button => button.className.includes('share'));
-        if(shareButtons.length > 0) {
-            for(let i = 0; i < shareButtons.length; i++){
-                shareButtons[i].addEventListener('click', () => {
-                    this.dataObject.navigationData.url = this.currentURL;
-                    this.currentURL = window.location.href;
-                    this.dataObject.eventsDetected.pageclose = true;
-                    this.dataObject.eventsDetected.sharebuttonclicked = true;
-                })
-            }
-        }
-    };
-
     addVideoPlayListener(){
        const videos = document.getElementsByTagName('video');
         if(videos.length > 0) {
