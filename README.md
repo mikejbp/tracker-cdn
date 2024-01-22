@@ -1,3 +1,12 @@
 # **User Navigation Tracker**
 
-User Navigation Tracker has a vanilla JavaScript and TypeScript version. It is able to captures and transmits user visit data to a specified endpoint. The use of TypeScript enhances compatibility with popular JavaScript frameworks like React or Angular, offering a versatile solution for diverse web development environments. The lightweight vanilla JavaScript core ensures efficient execution, while CryptoJS provides secure data encryption for heightened privacy and reliability in tracking user interactions.
+User Navigation Tracker is able to detect and transmits user visit data and events to a specified server endpoint.
+
+## ¿How to install and run the Tracker?
+
+Just execute the tracker file in head section of your html code via CDN as follows:
+
+    <script src="https://cdn.jsdelivr.net/gh/josemavarez11/tracker-cdn/tracker.js" type="module" id="tracker" trackerID="ID4567"></script>
+
+> [!IMPORTANT]
+> Use "tracker" as id of the script element in html,  and also specify a trackerID valid in server backend.
