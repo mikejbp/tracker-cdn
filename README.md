@@ -59,11 +59,11 @@ The data object you will get will look like this:
 Where: 
 
 - userData:
-      -  **ip**: You can add the user's ip from the server by overwriting the data object that arrives in the configured route.
-      - **trackerID**: Web site identifier necessary to use the tracker. It'll be validated by the serve to work.
-      - **deviceType**: Represents the type of device used by the user browsing the site.
-      - **os**: Represents the operating system used by the user browsing the site.
-      - **browser**: Represents the browser used by the user to acces to the site.
+    -  **ip**: You can add the user's ip from the server by overwriting the data object that arrives in the configured route.
+    - **trackerID**: Web site identifier necessary to use the tracker. It'll be validated by the serve to work.
+    - **deviceType**: Represents the type of device used by the user browsing the site.
+    - **os**: Represents the operating system used by the user browsing the site.
+    - **browser**: Represents the browser used by the user to acces to the site.
   
 - navigationData:
     - **url**: Represents the exact url address where the user browsed for the given time.
