@@ -28,7 +28,8 @@ In the case of Node.js this would be:
         return res.sendStatus(204)
     });
 
-The server needs an extra path to certify the validity of the tracker id you are trying to use.
+> [!IMPORTANT]
+> The server needs an extra path to certify the validity of the tracker id you are trying to use.
 
 ## Data Received
 
