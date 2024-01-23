@@ -65,7 +65,7 @@ class Tracker {
         this.dataObject.navigationData.visitTime = this.endTime - this.initTime;
         this.dataObject.navigationData.time = new Date();
 
-        navigator.sendBeacon('http://localhost:5000/api/v1/tracking', JSON.stringify(this.dataObject));
+        navigator.sendBeacon('https://d8q6mq1m-5000.use2.devtunnels.ms/api/v1/tracking', JSON.stringify(this.dataObject));
         this.initTime = Date.now();
         this.dataObject.eventsDetected.videoplayed = null;
     };
@@ -133,7 +133,7 @@ class Tracker {
 
 const checkPermission = async (trackerID) => {
     try {
-        const permise = await fetch('http://localhost:5000/api/v1/whiteList', {
+        const permise = await fetch('https://d8q6mq1m-5000.use2.devtunnels.ms/api/v1/whiteList', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
