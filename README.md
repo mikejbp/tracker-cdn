@@ -1,4 +1,4 @@
-# **User Navigation Tracker**
+# **User Navigation Tracker CDN**
 
 User Navigation Tracker is able to detect and transmits user visit data and events to a specified server endpoint.
 
