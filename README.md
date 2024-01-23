@@ -29,7 +29,7 @@ In the case of Node.js this would be:
     });
 
 > [!IMPORTANT]
-> The server needs an extra path to certify the validity of the tracker id you are trying to use.
+> The server needs an extra route to receive a GET request to certify the validity of the tracker id you are trying to use.
 
 ## Data Received
 
