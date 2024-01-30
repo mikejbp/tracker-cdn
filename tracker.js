@@ -5,9 +5,9 @@ class Tracker {
         this.trackerID = trackerID;
         this.currentURL = window.location.href;
         this.dataObject = {
+            trackerID: this.trackerID,
             userData: {
                 ip: '',
-                trackerID: this.trackerID,
                 deviceType: this.getDeviceType(),
                 os: navigator.userAgentData.platform || '',
                 browser: navigator.userAgentData.brands[2].brand || ''
