@@ -133,12 +133,11 @@ class Tracker {
 
 const checkPermission = async (trackerID) => {
     try {
-        const permise = await fetch('https://api-nfanst-final.devtop.online/api/v1/tracking/whiteList', {
-                method: 'POST',
+        const permise = await fetch(`https://api-nfanst-final.devtop.online/api/v1/tracking/whiteList/${trackerID}`, {
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ trackerID })
         });
         return permise.status;
     } catch (error) {
